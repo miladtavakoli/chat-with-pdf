@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/miladtavakoli/chat-with-pdf.git .
-
+COPY .env .env
 RUN pip3 install -r requirements.txt
 
 EXPOSE 8501
