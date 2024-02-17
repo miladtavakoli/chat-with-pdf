@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Vazirmatn');
+
+html, body, [class*="css"] {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+input {
+    unicode-bidi: bidi-override;
+    direction: RTL;
+}
+
+.st-emotion-cache-1629p8f h1, .st-emotion-cache-1629p8f h2, .st-emotion-cache-1629p8f h3, .st-emotion-cache-1629p8f h4, .st-emotion-cache-1629p8f h5, .st-emotion-cache-1629p8f h6, .st-emotion-cache-1629p8f span {
+    scroll-margin-top: 2rem;
+    direction: rtl;
+    text-align: center;
+    font-family: 'Vazirmatn', sans-serif
+}
