@@ -22,7 +22,7 @@ with open("custom-css.css") as css:
 def main_open_ai():
     memory = ConversationBufferMemory(memory_key="chat_history")
     vectordb = vector_db.get_vector_db(embeddings=embeddings, create_new=False)
-    chain = load_qa_chain(OpenAI(temperature=0.8, max_tokens=1000), chain_type='stuff')
+    chain = load_qa_chain(OpenAI(temperature=0.5, max_tokens=1000), chain_type='stuff')
     st.title('شرایط عمومی بیمه نامه')
     query = st.text_input('سوال خودت رو بپرس')
     if query:
